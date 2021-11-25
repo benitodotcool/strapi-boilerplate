@@ -8,7 +8,7 @@ AWS_ACCESS_SECRET=XXX
 AWS_REGION=XXX
 AWS_BUCKET_NAME=XXX
 ```
-3. I create a `config/plugins.js` to upload to AWS-S3
+3. I create a `config/plugins.js` to upload to AWS-S3.
 ```javascript
 module.exports = ({ env }) => ({
   upload: {
