@@ -12,18 +12,17 @@ AWS_BUCKET_NAME=XXX
 ```javascript
 module.exports = ({ env }) => ({
   upload: {
-	  provider:  "aws-s3",
-	  providerOptions: {
-		  accessKeyId:  env("AWS_ACCESS_KEY_ID"),
-		  secretAccessKey:  env("AWS_ACCESS_SECRET"),
-		  region:  env("AWS_REGION"),
-		  params: {
-			  Bucket:  env("AWS_BUCKET_NAME"),
-		  },
-	  },
+    provider: "aws-s3",
+    providerOptions: {
+      accessKeyId: env("AWS_ACCESS_KEY_ID"),
+      secretAccessKey: env("AWS_ACCESS_SECRET"),
+      region: env("AWS_REGION"),
+      params: {
+        Bucket: env("AWS_BUCKET_NAME"),
+      },
+    },
   },
 });
-
 ```
 4. To publish the application on Heroku, I just follow the [Strapi Documentation](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html).
 
