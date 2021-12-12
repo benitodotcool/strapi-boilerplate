@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "name": "work"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "inventoryNr": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "materials": {
+      "type": "string"
+    },
+    "dimensions": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "exhibitions": {
+      "type": "string"
+    }
+  }
+}
